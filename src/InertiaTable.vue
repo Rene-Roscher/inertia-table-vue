@@ -86,7 +86,7 @@ export default {
     form: {
       handler: _.throttle(function () {
         let query = _.pickBy(this.form)
-        this.$inertia.replace(this.route(this.routeName, Object.keys(query).length ? query : { remember: 'forget' }))
+        this.$inertia.get(this.route(this.routeName, Object.keys(query).length ? query : { remember: 'forget' }))
       }, 150),
       deep: true
     },
