@@ -17,7 +17,7 @@
     <div class="bg-white rounded shadow overflow-x-auto">
     <table class="w-full whitespace-no-wrap">
       <tr class="text-left font-bold">
-        <th v-for="header in columns" class="px-6 pt-6 pb-4 cursor-pointer" :class="{'cursor-pointer': order}" :key="header" @click="orderBy(header)">{{ sentanceCase(header) }}</th>
+        <th v-for="header in headings" class="px-6 pt-6 pb-4 cursor-pointer" :class="{'cursor-pointer': order}" :key="header" @click="orderBy(header)">{{ header }}</th>
       </tr>
       <tr v-for="(item) in data" :key="item[id]" @click="$emit('item-selected', item)" class="hover:bg-gray-100 focus-within:bg-gray-100 cursor-pointer">
       <td v-for="(column, index) in columns" :key="index" class="border-t" v-bind:class="{ 'px-6 py-4 flex items-center': index === 0 }">
@@ -61,6 +61,10 @@ export default {
       default: null
     },
     columns: {
+      type: Array,
+      default: null
+    },
+    headings: {
       type: Array,
       default: null
     },
