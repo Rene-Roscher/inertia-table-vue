@@ -1,6 +1,6 @@
 {
   "name": "inertia-table-vuejs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": false,
   "license": "MIT",
   "homepage": "https://github.com/Rene-Roscher/inertia-table-vue#readme",
@@ -8,9 +8,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-bundle": "vue-cli-service build --target lib --name inertia-table ./src/InertiaTable.vue"
+    "build-bundle": "vue-cli-service build --target lib --name inertia-table-vuejs ./src/InertiaTable.vue"
   },
-  "main": "./dist/inertia-table.common.js",
+  "main": "./dist/inertia-table-vuejs.common.js",
   "files": [
     "dist/*",
     "src/*",
