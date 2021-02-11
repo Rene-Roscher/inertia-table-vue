@@ -3,7 +3,7 @@
   "version": "1.0.8",
   "private": false,
   "license": "MIT",
-  "homepage": "https://github.com/harmonic/inertia-table-vue#readme",
+  "homepage": "https://github.com/Rene-Roscher/inertia-table-vue#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
