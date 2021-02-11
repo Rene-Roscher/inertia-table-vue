@@ -9,13 +9,13 @@ A Vue component for quickly and easily creating Inertia JS powered tables. Sugge
 Requires [Inertia JS](https://github.com/inertiajs) to be installed in your project.
 
 ```
-npm install --save inertia-table
+npm i inertia-table-vuejs
 ```
 
 or
 
 ```
-yarn add inertia-table
+yarn add inertia-table-vuejs
 ```
 
 ## Using inertia table
@@ -123,7 +123,7 @@ The above example generates an HTML link to display in a subscription column.
 
 ## Example
 
-The below example assumes you are using [harmonic/inertia-table for Laravel](https://github.com/harmonic/inertia-table) to create a backend controller that handles delivery of a User array and filters/orders the data.
+The below example assumes you are using [rene-roscher/inertia-table for Laravel](https://github.com/rene-roscher/inertia-table) to create a backend controller that handles delivery of a User array and filters/orders the data.
 
 ``` html
 <inertia-table 
@@ -158,7 +158,7 @@ export default {
   },
   methods: {
     show(user) {
-      this.$inertia.replace(this.route('users.edit', user.id));
+      this.$inertia.get(this.route('users.edit', user.id));
     }
   },
 }

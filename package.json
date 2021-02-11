@@ -1,5 +1,5 @@
 {
-  "name": "inertia-table",
+  "name": "inertia-table-vuejs",
   "version": "1.0.8",
   "private": false,
   "license": "MIT",
@@ -36,5 +36,14 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
+  },
+  "description": "A Vue component for quickly and easily creating Inertia JS powered tables. Suggested usage with [Inertia table for Laravel](https://github.com/harmonic/inertia-table).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rene-Roscher/inertia-table-vue.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Rene-Roscher/inertia-table-vue/issues"
   }
 }
